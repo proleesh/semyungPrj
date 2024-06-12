@@ -10,11 +10,14 @@ export default function List() {
     loadArticles();
   }, []);
   const loadArticles = async () => {
-    const result = await axios.get("/api/articles", {
-      validateStatus: () => {
-        return true;
-      },
-    });
+    const result = await axios.get(
+      `${import.meta.env.VITE_API_URL}/api/articles`,
+      {
+        validateStatus: () => {
+          return true;
+        },
+      }
+    );
     console.log("API response:", result);
     if (result.status === 200) setArticles(result.data);
   };
@@ -39,12 +42,16 @@ export default function List() {
                 <div className="card-body">
                   <h5 className="card-title">{article.title}</h5>
                   <p className="card-text">{article.content}</p>
-                  <a
-                    href={`/articles/${article.id}`}
+                  <button
+                    type="button"
+                    id="create-btn"
                     className="btn btn-primary"
+                    onClick={() => {
+                      navigate(`/articles/${article.id}`);
+                    }}
                   >
                     보러가기
-                  </a>
+                  </button>
                 </div>
               </div>
             </div>

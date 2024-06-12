@@ -9,7 +9,9 @@ export default function UpdateContent() {
   useEffect(() => {
     const loadArticleById = async () => {
       try {
-        const result = await axios.get(`/api/articles/${id}`);
+        const result = await axios.get(
+          `${import.meta.env.VITE_API_URL}/api/articles/${id}`
+        );
         setTitle(result.data.title);
         setContent(result.data.content);
       } catch (error) {
@@ -21,7 +23,7 @@ export default function UpdateContent() {
 
   const updateArticleById = async (event) => {
     event.preventDefault();
-    await axios.put(`/api/articles/${id}`, {
+    await axios.put(`${import.meta.env.VITE_API_URL}/api/articles/${id}`, {
       title: title,
       content: content,
     });

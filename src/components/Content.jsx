@@ -11,10 +11,13 @@ export default function Content() {
   const handleSubmit = async (event) => {
     event.preventDefault();
     try {
-      const response = await axios.post("/api/articles", {
-        title: title.trim(),
-        content: content.trim(),
-      });
+      const response = await axios.post(
+        `${import.meta.env.VITE_API_URL}/api/articles`,
+        {
+          title: title.trim(),
+          content: content.trim(),
+        }
+      );
       if (response.status === 201) {
         navigate("/");
       }
