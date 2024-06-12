@@ -1,4 +1,4 @@
-# React + Vite with Spring Boot + JPA(with MyBatis or MariaDB)
+# React + Vite with Spring Boot + JPA(with MySQL or MariaDB)
 
 ## Author: Sung-Hyuk Lee
 
