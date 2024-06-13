@@ -11,6 +11,7 @@ export default function Content() {
   const handleSubmit = async (event) => {
     event.preventDefault();
     try {
+      // Back-end에서 post메서드 api를 이용해서 json 데이터를 불러오기
       const response = await axios.post(
         `${import.meta.env.VITE_API_URL}/api/articles`,
         {

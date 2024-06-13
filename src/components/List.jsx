@@ -10,6 +10,7 @@ export default function List() {
     loadArticles();
   }, []);
   const loadArticles = async () => {
+    // Back-end에서 get메서드 api를 이용해서 json 데이터를 불러오기
     const result = await axios.get(
       `${import.meta.env.VITE_API_URL}/api/articles`,
       {

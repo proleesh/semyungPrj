@@ -12,12 +12,14 @@ export default function ViewContent() {
   useEffect(() => {
     const fetchArticle = async () => {
       try {
+        // Back-end에서 get메서드 api를 이용해서 json 데이터를 불러오기
         const response = await axios.get(
           `${import.meta.env.VITE_API_URL}/api/articles/${id}`
         );
         setArticle(response.data);
         setLoading(false);
       } catch (error) {
+        // 불러오기 실패 시 오류 메시지 호출
         setError(error.message);
         setLoading(false);
       }
