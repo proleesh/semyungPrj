@@ -6,6 +6,8 @@
 
 ## 개요:`이 리포지토리는 React(Vite) with Bun 인 Front-end와 Spring Boot(JPA) Back-end를 결합하여 MySQL 또는 MariaDB 데이터베이스를 사용하는 웹 application을 구현하는 방법을 보여줍니다.`
 
+## 참고로 이 프로젝트는 API호출 시 `localhost:80` 를 사용. 즉 포트를 80(HTTP 기본 포트)사용. 80은 생략가능합니다.전제 조건은 HTTP로 직접 접속시 생략 가능. 즉 `localhost` 이렇게 쓸 수 있다는 거죠. `.env`파일에서 `http://localhost`로 지정함.
+
 ## 주요 내용:
 
 - `React + Vite + Bun`: Front-end 개발을 위한 최신 JavaScript 도구를 활용
