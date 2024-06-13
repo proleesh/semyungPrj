@@ -15,6 +15,15 @@
 - `MySQL 또는 MariaDB`: Data 저장 및 관리를 위한 안정적이고 성능 좋은 Database Management System
 - `CORS 설정`: Front-end와 Back-end 간의 통신 허용
 
+## 작동 방법
+
+- 1 step: `git clone https://github.com/proleesh/semyungPrj.git`
+- 2 step: `bun i` or `npm i`
+- 3 step: `bun run dev` or `npm run dev`
+- 4 step: If you want to build this project, you can using this command `bun run build` or `bun vite build` or `npm run build` or `npm vite build`
+- 5 step: If you want to saw this building project you can using this command `bun serve dist` or `npm serve dist`
+
+
 ### 내용: thymeleaf에 있는 내용을 똑같이 vite+react+bun으로 구현
 
 ### 작업난이도: 중상
