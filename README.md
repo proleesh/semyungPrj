@@ -6,7 +6,9 @@
 
 ## 개요:`이 리포지토리는 React(Vite) with Bun 인 Front-end와 Spring Boot(JPA) Back-end를 결합하여 MySQL 또는 MariaDB 데이터베이스를 사용하는 웹 application을 구현하는 방법을 보여줍니다.`
 
-## 참고로 이 프로젝트는 API호출 시 `localhost:80` 를 사용. 즉 포트를 80(HTTP 기본 포트)사용. 80은 생략가능합니다.전제 조건은 HTTP로 직접 접속시 생략 가능. 즉 `localhost` 이렇게 쓸 수 있다는 거죠. `.env`파일에서 `http://localhost`로 지정함.
+## 백엔드 저장소: <a href="https://github.com/proleesh/project01_UNI">Spring Boot</a>
+
+## 참고로 이 프로젝트는 API호출 시 `localhost:80` 를 사용. 즉 포트를 80(HTTP 기본 포트)사용. 80은 생략가능합니다.전제 조건은 HTTP로 직접 접속시 생략 가능. 즉 `localhost` 이렇게 쓸 수 있다는 거죠. `.env`파일에서 `http://localhost`로 지정함. 백엔드 작동시 데이터 호출 가능함.
 
 ## 주요 내용:
 
@@ -22,7 +24,6 @@
 - 3 step: `bun run dev` or `npm run dev`
 - 4 step: If you want to build this project, you can using this command `bun run build` or `bun vite build` or `npm run build` or `npm vite build`
 - 5 step: If you want to saw this building project you can using this command `bun serve dist` or `npm serve dist`
-
 
 ### 내용: thymeleaf에 있는 내용을 똑같이 vite+react+bun으로 구현
 
