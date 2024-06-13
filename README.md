@@ -25,4 +25,4 @@
 
 ### 어려운 점: CORS 요청 거부. 하지만 고민 끝에 전부 해결.
 
-> Back-end인 Spring Boot에서 ResponseEntity를 통해 JSON 데이터를 불러오는 작업, CORS를 Back-end인 Spring Boot에서 @CrossOrigin을 통해 모든 접근 허용 활성화 작업, Fonr-end인 React에서 해당 메서드 API 매칭 작업
+> Back-end인 Spring Boot에서 ResponseEntity를 통해 JSON 데이터를 불러오는 작업, CORS를 Back-end인 Spring Boot에서 @CrossOrigin을 통해 모든 접근 허용 활성화 작업, Front-end인 React에서 해당 메서드 API 매칭 작업
