@@ -1,8 +1,8 @@
 import { HashRouter as Router, Route, Routes } from "react-router-dom";
-import ArticleList from "./components/ArticleList";
-import NewArticle from "./components/NewArticle";
-import Article from "./components/Article";
-import EditArticle from "./components/EditArticle";
+import ArticleList from "./ArticleList";
+import NewArticle from "./NewArticle";
+import Article from "./Article";
+import EditArticle from "./EditArticle";
 // author: Sung-Hyuk Lee
 // date: 2024.6.12
 function App() {
